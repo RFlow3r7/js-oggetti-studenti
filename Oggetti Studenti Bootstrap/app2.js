@@ -1,7 +1,30 @@
 console.log('Esercizio JS Studenti');
 
 // Creazione Array Studenti
-let studenti = [];
+const studenti = [
+    {
+        name: 'Andrea',
+        lastname: 'Fiore',
+        age: 28
+    },
+    {
+        name: 'Luigi',
+        lastname: 'Rossi',
+        age: 30
+    },
+    {
+        name: 'Marco',
+        lastname: 'Fizzo',
+        age: 32
+    }
+];
+
+
+studenti.forEach(studente => {
+    console.log(`name: ${studente.name}`);
+    console.log(`lastname: ${studente.lastname}`);
+    console.log(`age: ${studente.age}`);
+});
 
 // Aggiunta nuovo studente nell'array
 function aggiungiStudente(name, lastname, age) {
